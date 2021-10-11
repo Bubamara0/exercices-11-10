@@ -4,12 +4,11 @@ b = int(input("b : "))
 c = int(input("c : "))
 
 # Comparaison et affichage du plus grand nombre
-if a > b & a > c :
-    print("a est le plus grand")
-elif b > a & b > c :
-    print("b est le plus grand")
-elif c > a & c > b :
-    print("c est le plus grand")
-    
+if a > b and a > c :
+    print(f"{a} est le plus grand")
+elif b > a and b > c :
+    print(f"{b} est le plus grand")
+elif c > a and c > b :
+    print(f"{c} est le plus grand")
 
-  
+
