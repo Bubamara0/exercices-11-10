@@ -1,1 +1,38 @@
 
+// Programme qui affiche le plus grand de trois entiers saisis
+#include <stdio.h>
+
+int main(void)
+{
+    
+// Déclaration des variables
+    int a, b, c;
+
+// Saisie des trois nombres
+    printf("a : ");
+    scanf("%i", &a);
+    printf("b : ");
+    scanf("%i", &b);
+    printf("c : ");
+    scanf("%i", &c);
+    
+// Comparaison
+// Vérifier si a est plus grand que b et c
+    if (a > b && a > c)   
+    {
+        printf("a est le plus grand");
+        return 0;
+    }
+// Sinon, vérifier si b est plus grand que a et c
+    else if (b > a && b > c)
+    {
+        printf("b est le plus grand");
+        return 0;
+    }
+// Sinon, vérifier si c est plus grand que a et b
+    else if (c > a && c > b)
+    {
+        printf("c est le plus grand");
+        return 0;
+    }
+}
