@@ -1,0 +1,24 @@
+// Programme qui échange deux entiers saisis
+#include <stdio.h>
+
+int main(void)
+{
+    int x, y, tmp;
+    
+// Saisie  des deux entiers
+    printf("x = ");
+    scanf("%i", &x);
+    printf("y = ");
+    scanf("%i", &y);
+    
+// Affichage de la valeur initiale de x et y
+    printf("x est égal à %i et y est égal à %i\n", x, y);
+
+// Variable temporaire
+    tmp = x;
+    x = y;
+    y = tmp;
+    
+// Affichage de la valeur de x et y après le swap
+    printf("Après échange : \nx est égal à %i et y est égal à %i\n", x, y);
+}
