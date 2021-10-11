@@ -1,0 +1,33 @@
+// Programme qui permet d'écrire dans un fichier CSV, le modèle de la voiture et sa plaque d'immatriculation
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    char modele[50];
+    char plaque[50];
+
+// Ouverture du fichier csv
+    FILE *file = fopen("voiture2.csv", "a");
+
+
+    if (!file)
+    {
+        return 1;
+    }
+
+// Entrée du modèle et du numéro de plaque
+
+    printf("Modèle de la voiture : ");
+    scanf("%s", modele);
+    printf("Plaque d'immatriculation (sans espace) : ");
+    scanf("%s", plaque);
+
+// Écriture dans le fichier csv
+    fprintf(file, "%s, %s\n", modele, plaque);
+
+// Fermeture du fichier
+    fclose(file);
+}
+
