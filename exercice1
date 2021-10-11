@@ -1,0 +1,20 @@
+// Programme qui saisit deux entiers et affiche leur produit
+#include <stdio.h>
+
+int main(void)
+{
+
+// Déclaration des variables
+    int x, y, result;
+
+// Saisie des nombres
+    printf("x : ");
+    scanf("%i", &x);
+    printf("y : ");
+    scanf("%i", &y);
+
+// Calcul et affichage du résultat
+    result = x * y;
+    printf("x * y = %i\n", result);
+
+}
